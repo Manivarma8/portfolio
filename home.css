@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/img.webp');
+    display : flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width : 100vw;
+    height : 200vh;
+}
+
+.contain,.pro{
+   display : flex;
+   flex-direction: column; 
+}
+
+
+img{
+    width : 300px;
+    height : 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+    transition: 1s;
+}
+img:hover{
+    transform: scale(1.2);
+    border: 10px double orangered;
+    cursor: pointer;
+    border-radius: 10%;
+}
+p:hover{
+transform: scale(1.03);
+color: rgb(172, 166, 229);
+font-weight: bold;
+cursor: pointer;
+
+}
+.navig{
+    position: fixed;
+    top : 0;
+    z-index: 2;
+    background-image:url('/img.webp') ;
+
+    
+}
+.navig ul{
+    display : flex;
+    
+    
+
+}
+a{
+    color: aliceblue;
+    margin-left: 0px;
+    text-decoration: none;
+    list-style-type: armenian;
+    font-size: 20px;
+    
+}
+
+.navig ul li {
+    font-variant: small-caps;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+    color: rgb(41, 38, 38);
+    padding: 0 20px;
+}
+
+.navig ul li a{
+    position: relative;
+    width : fit-content
+}
+
+.navig ul li a::after{ 
+content: "";
+position: absolute;
+bottom: -6px; /* Adjust this value to position the underline relative to the text */
+left: 0; /* Start the underline from the beginning of each <a> element */
+width: 100%; /* Make the underline span the entire width of the <a> element */
+height: 4px; /* Adjust the thickness of the underline as needed */
+background-color: beige;
+transform: scaleX(0); /* Initially hidden */
+transition: transform 1.3s ease;
+transform-origin: left;
+
+}
+
+.navig ul li a:hover::after{ 
+    margin-top : 10px;
+    transform: scaleX(1);
+}
+
+h1{
+    color: white;
+  position: relative;    
+  cursor: pointer;
+}
+
+
+h1::after{
+    content: "";
+    transform : scaleX(0);
+    transition : transform 1.5s linear;
+    width : 100%;
+    left : 0;
+    height : 2px;
+    bottom: 2px;
+    position: absolute;
+    background-color: aliceblue;
+    transform-origin: left;
+}
+
+h1:hover::after{
+    transform: scaleX(1);
+
+}
+
+i{
+    color : red;
+    font-size: 1px;
+}
+p{
+    color : orange;
+    width : 40%;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.pro p{
+    color: white;
+    font-size: large;
+} 
+.table{
+    padding-top: 60px;
+    
+}
+.about,h3 {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.about{
+  
+    display: flex;
+    flex-direction: column;
+    height : auto;
+    align-items: center;
+    justify-content: center;
+    width : 100vw;
+
+}
+
+.about table th{
+    border: 1px solid white;
+    padding: 20px 20px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-variant: small-caps;
+    transition: 1s;
+}
+td{
+    border: 1px solid white;
+    color: white;
+    padding : 10px 20px;
+
+}
+
+h4, h3{
+    color: white;
+   
+    
+
+}
+ h4{
+    position: relative;
+    width : fit-content;
+    cursor: pointer;
+}
+h4::after{
+    content: "";
+    transform : scaleX(0);
+    transition : transform 1.5s ease-out;
+    width : 100%;
+    left : 0;
+    height : 2px;
+    bottom: -6px;
+    position: absolute;
+    background-color: aliceblue;
+    transform-origin: left;
+    
+}
+
+
+ h4:hover::after{
+    transform: scaleX(1);
+    cursor: pointer;
+}
+
+hr{
+    color: white;
+
+}
+.char{
+    display : flex;
+    padding-top: 10px;
+    border-spacing: 20px;
+   
+}
+.skill{
+    border-right: 2px solid white;
+    
+}
+.strength{
+    font-family :Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+
+}
+
+.strength,.skill, h4{
+  padding-left: 40px;
+}
+
+.strength,.skill,li{
+    padding-top: 20px;
+}
+
+.project,h3{
+    padding-top: 70px;
+}
+
+.pro{
+    color: orange;
+    display:flex;
+}
+
+.contain,.Pro{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    height : 200vh
+    
+}
+.One,.Two,p{
+    width: 100%;
+    font-size: 20px;
+    height: auto;
+}
+
+.contain,.contact{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+height : 100vh;
+padding: 60px;
+font-family:cursive;
+gap: 20px;
+}
+
+span{
+    font-size: 18px;
+}
+li{
+    color : rgb(226, 220, 220)
+}
+.contact{
+    position: absolute;
+    left : 0;
+    margin-left: 200px;
+}
+.navig,.add{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media (max-width: 840px){
+    .contain
+    {
+      width : 100%;
+      height : auto
+    }
+   
+    .about,table{
+        width: 200px;
+        height: auto;
+       
+    }
+.about,h3{
+    width :100%;
+}
+.char{
+    display : block;
+    height : auto;
+
+}
+
+
+.skill,.strength{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.Pro{
+    display : block
+}
+.contact{
+margin : auto;
+}
+
+
+}
+th{
+    transition: 1s;
+    
+
+}
+@media (max-width : 1300px){
+    .Pro{
+     display : block
+    }
+}
+
+h1{
+    transition: 1s;
+}
+
+h1:hover{
+font-weight: bold;
+transform: scale(1.1);
+color: orange;
+}
+
+th:hover{
+font-weight: bold;
+transform: scale(1.1);
+color: orange;
+cursor: pointer;
+}
+
+.proh{
+    transition: 1.9s;
+    position: relative;
+    width : fit-content;
+    
+}
+
+.proh::after{
+    content: "";
+    position: absolute;
+    width : 100%;
+    left: 0;
+    height : 4px;
+    transform: scaleX(0);
+    transition: transform 1.3s ease;
+    transform-origin: left;
+    background-color: aliceblue;
+    bottom: 3px;
+    }
+
+    .proh:hover::after{
+        transform : scaleX(1);
+    }
+.proh:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+    transform : scale(1.07);
+}
+
